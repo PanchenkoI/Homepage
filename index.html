@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Index page</title>
+
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link" href="first.html">Різновиди/</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="second.html">Україна/</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="third.html">Фото/</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+      <!-- The video -->
+<video autoplay muted loop id="myVideo">
+  <source src="index.mp4" type="video/mp4">
+</video>
+
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+  <h1>Велосипед</h1>
+  <p>Велосипе́д (стар. фр. vélocipède, от лат. vēlōx «быстрый» и pes «нога») — колёсное транспортное средство (или спортивный снаряд), приводимое в движение мускульной силой человека через ножные педали или (крайне редко) через ручные рычаги. Наиболее распространены двухколёсные велосипеды, но существуют также конструкции с тремя и более колёсами. Стал использоваться как средство передвижения ещё до широкого распространения городского общественного транспорта, в том числе автобусов, троллейбусов и трамваев. Также популярен среди туристов и в спортивных целях. В современном мире также используют электропривод для увеличения области использования велосипеда.
+
+    Правила дорожного движения России определяют велосипед как «транспортное средство, кроме инвалидных колясок, имеющее два колеса или более и приводимое в движение мускульной силой людей, находящихся на этом транспортном средстве, в частности при помощи педалей или рукояток, и может также иметь электродвигатель номинальной максимальной мощностью в режиме длительной нагрузки, не превышающей 0,25 кВт, автоматически отключающийся на скорости более 25 км/ч».
+  </p>
+  <!-- Use a button to pause/play the video with JavaScript -->
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+<script>
+  // Get the video
+  var video = document.getElementById("myVideo");
+
+  // Get the button
+  var btn = document.getElementById("myBtn");
+
+  // Pause and play the video, and change the button text
+  function myFunction() {
+    if (video.paused) {
+      video.play();
+      btn.innerHTML = "Pause";
+    } else {
+      video.pause();
+      btn.innerHTML = "Play";
+    }
+  }
+  </script>
+    </body>
+</html>
